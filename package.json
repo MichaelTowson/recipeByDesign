@@ -1,7 +1,9 @@
 {
   "dependencies": {
     "@popperjs/core": "^2.9.3",
-    "bootstrap": "^5.1.0"
+    "bootstrap": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
   },
   "name": "recipebydesign",
   "version": "1.0.0",
@@ -9,7 +11,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Michael Towson, Josh Knox",
   "license": "ISC",
-  "description": ""
+  "description": "App for querying different recipe/bartending databases for recipes",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelTowson/recipeByDesignFin.git"
+  },
+  "keywords": [
+    "node.js",
+    "javascript",
+    "mongodb"
+  ],
+  "bugs": {
+    "url": "https://github.com/MichaelTowson/recipeByDesignFin/issues"
+  },
+  "homepage": "https://github.com/MichaelTowson/recipeByDesignFin#readme"
 }
