@@ -8,7 +8,7 @@
         const session = require('express-session');
         const cors = require('cors')
 
-    // Import configuration settings, which are set in a hidden .env file and exported from config.js
+    // Import configuration settings, which are set in a hidden .env file in the root directory and exported from config.js
         const {
             PORT,
             DB_URI,
