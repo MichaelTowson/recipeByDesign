@@ -15,7 +15,7 @@
         } = require('./config');
 
 
-// ----------- CLIENT (SRC) ---------------------
+// ----------- SERVER ---------------------
 
     const app = express(); // Initialize express
 
@@ -32,15 +32,15 @@
     // Initialize Express-Session - TO DO: ADD THIS CODE AFTER SERVER RESTFUL API IS WORKING
 
     // Set routes
-        const client_routes = require('./src/client_routes'); //Router dependency is defined in imported file.
-        app.use('/', client_routes)
+        const routes = require('./src/routes/routes'); //Router dependency is defined in imported file.
+        app.use('/', routes)
 
     // Activate client (app) to begin listening on port.
         app.listen(PORT, () => {
-            console.log(`CLIENT STATUS: Successfully began running on port ${PORT}`);
+            console.log(`SERVER STATUS: Successfully began running on port ${PORT}`);
         });
 
-// ----------- SERVER --------------------------
+// ----------- DATABASE --------------------------
     
     // Connect
         mongoose.connect(DB_URI, {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true})
