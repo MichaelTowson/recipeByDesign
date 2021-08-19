@@ -1,12 +1,12 @@
+//Nav bar animation/styling
 window.onload = function() {
-  console.log("Chicken");
-  setActivePage("Search");
+  setActivePage("recipes");
 };
 
 function setActivePage(id) {
-  var activePage = document.getElement
-  document.querySelector("").class = "active"
+  document.getElementById(id).classList.add('active')
 }
+//----
 
 const getRecipeBtn = document.getElementById("getRecipe").addEventListener("click", getRecipe)
 

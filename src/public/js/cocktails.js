@@ -1,6 +1,14 @@
+//Nav bar animation/styling
+window.onload = function() {
+  setActivePage("cocktails");
+};
+
+function setActivePage(id) {
+  document.getElementById(id).classList.add('active')
+}
+//----
+
 document.querySelector('#search').addEventListener('click', getCocktail)
-
-
 
 function clearField() {
         document.querySelector('#searchTerm').value = ""

@@ -1,3 +1,13 @@
+//Nav bar animation/styling
+window.onload = function() {
+  setActivePage("roulette");
+};
+
+function setActivePage(id) {
+  document.getElementById(id).classList.add('active')
+}
+//----
+
 const getRecipeBtn = document.getElementById('getRecipe').addEventListener('click', getRecipe)
 const recipeContainer = document.getElementById('meal')
 
