@@ -7,6 +7,7 @@ router.get('/recipes', (req, res) => {res.render('Recipes')});
 router.get('/roulette', (req, res) => {res.render('Roulette')});
 router.get('/contact', (req, res) => {res.render('Contact')});
 router.get('/cocktails', (req, res) => {res.render('Cocktails')});
+router.get('/login', (req, res) => {res.render('Login')});
 
 //User CRUD Routes
 const userController = require('../controllers/user.controller');

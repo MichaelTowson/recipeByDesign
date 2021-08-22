@@ -1,0 +1,24 @@
+.login-form {
+    display: block;
+    padding: 4rem;
+    background-color: rgb(46,56,79, 0.4);
+    border-radius: 4rem;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.4);
+    width: 40%;;
+}
+
+.login-form label{
+    color: white;
+    margin-top: 2rem;
+    width: 8rem;
+}
+
+.login-form h1{
+    color: white;
+}
+.login-form button{
+    background-color: black;
+    color: white;
+    border: solid white 1px;
+    margin-top: 2rem;
+}

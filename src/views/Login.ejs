@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../components/Head'); %>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/login.css">
+        <title>Login</title>
+</head>
+
+<body class="login">
+    <header>
+        <!-- Navigation Bar -->
+        <nav>
+            <%- include('../components/Navigation'); %>
+        </nav>
+    </header>
+
+    <!-- Login Form -->
+    <section>
+        <div class="login-form">
+            <h1>Login</h1>
+            <form action="/login" method="POST">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password">
+                </div>
+                <button class="btn" type="submit">Login</button>
+            </form>
+        </div>
+        <div class="login-form">
+            <h1>Register</h1>
+            <form action="/register" method="POST">
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" name="username">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password">
+                </div>
+                <button class="btn" type="submit">Register</button>
+            </form>
+        </div>
+    </section>
+    
+
+</body>
