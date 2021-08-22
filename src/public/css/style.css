@@ -105,6 +105,11 @@ body{
   background-size: cover;
 }
 
+.login{
+  background: url("../images/login.jpg") no-repeat;
+  background-size: cover;
+}
+
 /*end of background for each page*/
 
 
