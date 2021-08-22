@@ -30,7 +30,7 @@ const UserSchema = new mongoose.Schema({
         required: [false, "please write 'true' or 'false' whether the user is an adminstrator or not."],
     },
 
-    favorite_recipes: [{
+    saved_recipes: [{
         type: String,
         required: [false],
     }],
